@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  padding-top: 200px;
+}
+
+.logo-container {
+  background-image: url('/background.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #6A14FF;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-bottom: 0;
+}
+
+/* 오버레이의 투명도를 약간 낮춤 */
+.logo-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(106, 20, 255, 0.7), rgba(106, 20, 255, 0.65));
+  z-index: -1;
+}
+
+/* 로고가 오버레이 위에 보이도록 */
+.logo {
+  position: relative;
+  width: auto;
+  height: 200px;
+}
+
+.tournament-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.tournament-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.image-pair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 270px;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.vs-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-10deg);
+}
+
+.final-result {
+  text-align: center;
+  padding: 50px 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.final-result h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* 최종 결과 이미지 카드에 대한 스타일 */
+.final-result .image-card-wrapper {
+  width: 400px;
+  cursor: default;
+  transform: none !important;
+}
+
+.final-result .image-card-wrapper:hover {
+  transform: none !important;
+}
+
+/* 이미지 정보 스타일 유지 (display: none 제거) */
+.final-result .image-info {
+  text-align: left;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .final-result .image-card-wrapper {
+    width: 500px;
+  }
+}
+
+.vs-icon {
+  width: 120px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #6A14FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #5711CC;
+}
+  

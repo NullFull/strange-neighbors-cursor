@@ -1,0 +1,67 @@
+.selected-image-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.selected-image-container {
+  width: min(80%, 400px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-info {
+  text-align: left;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.image-info h3 {
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.image-info p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.next-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #6A14FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.next-button:hover {
+  background-color: #5711CC;
+}
